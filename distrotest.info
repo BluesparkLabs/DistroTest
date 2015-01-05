@@ -1,0 +1,97 @@
+; Packaging information for Distro Test
+name = "Distro Test"
+description = "A Drupal distribution to test make-file based projects."
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Bean
+dependencies[] = bean
+dependencies[] = bean_admin_ui
+; Chaos tool suite
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = views_content
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = translation
+dependencies[] = update
+dependencies[] = user
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+; Development
+dependencies[] = devel
+dependencies[] = profiler_builder
+; Fields
+dependencies[] = conditional_fields
+dependencies[] = entityreference
+dependencies[] = field_collection
+dependencies[] = field_group
+dependencies[] = link
+dependencies[] = title
+; Multilingual
+dependencies[] = l10n_update
+dependencies[] = lang_dropdown
+; Multilingual - Entity Translation
+dependencies[] = entity_translation
+; Multilingual - Internationalization
+dependencies[] = i18n
+dependencies[] = i18n_menu
+dependencies[] = i18n_string
+dependencies[] = i18n_translation
+dependencies[] = i18n_variable
+dependencies[] = language_cookie
+; Other
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = galleria
+dependencies[] = insert
+dependencies[] = libraries
+dependencies[] = menu_block
+dependencies[] = navbar
+dependencies[] = pathauto
+dependencies[] = proxy
+dependencies[] = strongarm
+dependencies[] = token
+; Panels
+dependencies[] = panels
+dependencies[] = panels_everywhere
+; Statistics
+dependencies[] = googleanalytics
+; User interface
+dependencies[] = ckeditor
+dependencies[] = jquery_update
+; Variable
+dependencies[] = variable
+dependencies[] = variable_realm
+dependencies[] = variable_store
+; Views
+dependencies[] = views
+dependencies[] = views_ui
+; Features
+dependencies[] = features
+dependencies[] = distrotest_system

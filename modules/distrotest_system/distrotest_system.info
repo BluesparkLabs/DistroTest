@@ -1,0 +1,4 @@
+name = Distro Test System
+description = A module that should be enabled when the distro is installed.
+core = 7.x
+package = Distro Test

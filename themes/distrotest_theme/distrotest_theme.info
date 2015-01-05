@@ -1,0 +1,9 @@
+name = Distro Test Theme
+description = A base theme for the Distro Test.
+core = 7.x
+engine = phptemplate
+regions[content] = Content
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sideabr Second
+regions[header] = Header
+regions[footer] = Footer
