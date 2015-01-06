@@ -72,4 +72,4 @@ the specific project site to the end of the makefile.
     
 5.  Install the drupal site (assuming you've prepared a database and db username/pwd).
 
-       $ drush si distrotest --db-url=mysql://dbuser:pass@localhost:port/dbname
+        $ drush si distrotest --db-url=mysql://dbuser:pass@localhost:port/dbname
