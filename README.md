@@ -59,8 +59,8 @@ the specific project site to the end of the makefile.
         $ drush make myproject.make
 
 
-Drush will download Drupal 7 and extract it to the current directory. It will
-download the profile to the `profiles` folder and, upon discovering the
-distro's own make file, continue to download the modules and libraries in
-distro. Finally it will download any site-specific modules, themes, and
-libraries.
+Drush will download Drupal 7 and extract it to the current directory. It
+will download the profile to the `profiles` folder and, upon discovering
+the profiles's own make file, continue to download the modules and libraries
+in the distro. Finally it will download any site-specific modules, themes,
+and libraries.
