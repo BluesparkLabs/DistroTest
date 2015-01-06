@@ -7,7 +7,7 @@ makefile-based approach to site deployment.
 The companion [DistroTestProject](https://github.com/BluesparkLabs/DistroTestProject)
 is an example site installation that leverages the DistroTest.
 
-Usage
+Setup
 =====
 
 These instructions demonstrate how you can build your own custom site;
@@ -59,8 +59,17 @@ the specific project site to the end of the makefile.
         $ drush make myproject.make
 
 
-Drush will download Drupal 7 and extract it to the current directory. It
-will download the profile to the `profiles` folder and, upon discovering
-the profiles's own make file, continue to download the modules and libraries
-in the distro. Finally it will download any site-specific modules, themes,
-and libraries.
+    Drush will download Drupal 7 and extract it to the current directory.
+    It will download the profile to the `profiles` folder and, upon
+    discovering the profiles's own make file, continue to download the
+    modules and libraries in the distro. Finally it will download any 
+    site-specific modules, themes, and libraries.
+    
+    If installing the site for the first time, you may specify the
+    `--prepare-install` option which will prepare the built site for
+    installation by generating a properly permissioned settings.php
+    and files directory.
+    
+5.  Install the drupal site (assuming you've prepared a database and db username/pwd).
+
+       $ drush si distrotest --db-url=mysql://dbuser:pass@localhost:port/dbname
