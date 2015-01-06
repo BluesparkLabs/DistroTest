@@ -138,7 +138,7 @@ function distrotest_install_task_import_content(&$install_state) {
   $menu_items[] = array(
     'link_path' => 'http://example.com',
     'link_title' => 'Example Footer Link 1',
-    'menu_name' => 'menu-footer', // Menu machine name, for example: main-menu
+    'menu_name' => 'main-menu', // Menu machine name, for example: main-menu
     'weight' => 0,
     'language' => 'en',
     'plid' => 0, // Parent menu item, 0 if menu item is on top level
@@ -147,7 +147,7 @@ function distrotest_install_task_import_content(&$install_state) {
   $menu_items[] = array(
     'link_path' => 'http://example.com',
     'link_title' => 'Example Footer Link 2',
-    'menu_name' => 'menu-footer', // Menu machine name, for example: main-menu
+    'menu_name' => 'main-menu', // Menu machine name, for example: main-menu
     'weight' => 0,
     'language' => 'en',
     'plid' => 0, // Parent menu item, 0 if menu item is on top level
@@ -156,7 +156,7 @@ function distrotest_install_task_import_content(&$install_state) {
   $menu_items[] = array(
     'link_path' => 'http://example.com',
     'link_title' => 'Example Footer Link 3',
-    'menu_name' => 'menu-footer', // Menu machine name, for example: main-menu
+    'menu_name' => 'main-menu', // Menu machine name, for example: main-menu
     'weight' => 0,
     'language' => 'en',
     'plid' => 0, // Parent menu item, 0 if menu item is on top level
@@ -168,10 +168,6 @@ function distrotest_install_task_import_content(&$install_state) {
 
   // Ensure footer and main menus are configured for menu item translation.
   if (module_exists('i18n_menu')) {
-    $footer = menu_load('menu-footer');
-    $footer['i18n_mode'] = I18N_MODE_TRANSLATE;
-    menu_save($footer);
-
     $main_menu = menu_load('main-menu');
     $main_menu['i18n_mode'] = I18N_MODE_TRANSLATE;
     menu_save($main_menu);
