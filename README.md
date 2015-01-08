@@ -97,3 +97,7 @@ be detected by the distro and automatically enabled:
 5.  Install the drupal site (assuming you've prepared a database and db username/pwd).
 
         $ drush si distrotest --db-url=mysql://dbuser:pass@localhost:port/dbname
+
+6. Revert all enabled features.
+
+        $ drush features-revert-all -y
