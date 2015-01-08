@@ -54,7 +54,31 @@ the specific project site to the end of the makefile.
         libraries[somelibrary][download][type] = "get"
         libraries[somelibrary][download][url] = "https://example.com/path/to/somelibrary-1.2.3.zip"
 
-4. Build the project
+4. To have the distro enable custom modules and/or features during site
+installation, add the following line to the module's `.info` file so they may
+be detected by the distro and automatically enabled:
+
+        distro = distrotest
+
+    Since you cannot modify contrib modules info files, you should at the very
+    least have one custom module or feature that lists all of the new contrib
+    modules listed as dependencies.
+
+    E.g.
+
+        //myproject_system.info
+        name = My Project System
+        description = System-wide configurations and settings for My Project.
+        core = 7.x
+        package = My Project
+        distro = distrotest
+        dependencies[] = logintoboggan
+        dependencies[] = contrib_module_name
+        dependencies[] = another_contrib_module_name
+
+    The distro will enable this module/feature along with all of its dependencies.
+
+5. Build the project
 
         $ drush make myproject.make
 
