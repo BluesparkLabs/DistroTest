@@ -58,7 +58,7 @@ the specific project site to the end of the makefile.
 installation, add the following line to the module's `.info` file so they may
 be detected by the distro and automatically enabled:
 
-        distro = distrotest
+        distrotest_enable_on_install = yes
 
     Since you cannot modify contrib modules info files, you should at the very
     least have one custom module or feature that lists all of the new contrib
@@ -71,7 +71,7 @@ be detected by the distro and automatically enabled:
         description = System-wide configurations and settings for My Project.
         core = 7.x
         package = My Project
-        distro = distrotest
+        distrotest_enable_on_install = yes
         dependencies[] = logintoboggan
         dependencies[] = contrib_module_name
         dependencies[] = another_contrib_module_name

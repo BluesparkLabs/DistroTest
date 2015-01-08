@@ -121,11 +121,11 @@ function distrotest_install() {
   // Add the following line to the info files of your custom modules and
   // features so they may be automatically enabled during installation:
   //
-  //   distro = distrotest
+  //   distrotest_enable_on_install = yes
   //
   $modules = $form_state['modules'] = system_rebuild_module_data();
   foreach ($modules as $module_name => $module) {
-    if (isset($module->info['distro']) && $module->info['distro'] == 'distrotest') {
+    if (isset($module->info['distrotest_enable_on_install']) && $module->info['distrotest_enable_on_install'] == 'yes') {
       $distro_modules[] = $module_name;
       if (isset($module->info['features'])) {
         $features[] = $module_name;
