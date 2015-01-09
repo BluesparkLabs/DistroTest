@@ -18,12 +18,12 @@ it follows the DistroTestProject codebase.
         $ mkdir -p ~/Sites/myproject
 
 
-2. Add a makefile using the project name, eg `myproject.make`. The makefile's
-contents should include directives to install Drupal 7 and pull the contents of
-the DistroTest repository into the /profiles folder.
+2. Add a makefile called `project.make`. The makefile's contents should include
+   directives to install Drupal 7 and pull the contents of the DistroTest
+   repository into the `/profiles` folder.
 
 
-        ; myproject.make
+        ; project.make
         core = 7.x
         api = 2
         
@@ -78,9 +78,9 @@ be detected by the distro and automatically enabled:
 
     The distro will enable this module/feature along with all of its dependencies.
 
-5. Build the project
+5. Build the project.
 
-        $ drush make myproject.make
+        $ drush make project.make --working-copy
 
     Drush will download Drupal 7 and extract it to the current directory.
     It will download the profile to the `profiles` folder and, upon
