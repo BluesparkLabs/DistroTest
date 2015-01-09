@@ -164,7 +164,7 @@ the installation profile's repository, instead of the site-specific repository.
 
     In the case of new *custom modules*, add `package = distrotest` to
     the module's info file and consider moving the custom module into the
-    `profiles/distrotest/modules/custom/` folder.  If the module is public, but just
+    `profiles/distrotest/modules/custom/` folder.  If the module is public but
     not on drupal.org, add the necessary download info into distrotest.make.
 
     In the case of new *custom themes*, ensure the theme is placed inside the
